@@ -87,7 +87,7 @@
             }
         }
 
-        div {
+        #my {
             background-color: black;
             color: white;
             width: 100%;
@@ -99,8 +99,8 @@
             flex-direction: column;
         }
 
-        div span {
-            display: block;
+        #my span {
+            display: inline-block;
             font-weight: 600;
             background-color: white;
             color: black;
@@ -110,11 +110,21 @@
             transition: ease-in-out 0.5s;
         }
 
-        div span:hover {
+        #my span:hover {
             background-color: transparent;
             color: white;
             border: 3px solid white;
             padding: 10px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        #my p {
+            text-align: center;
         }
     </style>
 </head>
@@ -143,10 +153,23 @@
     <a href="/" class="yes">Protect Your Systems</a>
     <a href="/" class="btn">Get Full Protect</a>
     <!-- Get Full Protect here -->
-    <div>
+    <button onclick="my()">Credit</button>
+    <div id="my">
         <p>Copyright 2024 <b>Uber</b></p>
         <span>contact</span>
     </div>
-
+<script>
+    function my() {
+        var x = document.getElementById("my");
+        if (x.style.display === "none") {
+            x.style.display = "flex"
+            x.style.width = "100%"
+            x.style.height = "200px"
+            x.style.textAlign = "center"
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 </html>
 </body>
