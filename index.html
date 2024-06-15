@@ -37,13 +37,17 @@
         }
 
         a:hover {
-            /* opacity: 0.6; */
+            opacity: 0.6;
             box-shadow: rgba(39, 39, 43, 0.2) 0px 7px 29px 0px;
         }
 
         a.btn {
             margin-left: 10px;
             background-color: rgb(123, 123, 123);
+        }
+
+        div {
+            margin-top: 15px;
         }
 
         @media screen and (max-width: 700px) {
@@ -82,6 +86,36 @@
                 margin-left: 0;
             }
         }
+
+        div {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        div span {
+            display: block;
+            font-weight: 600;
+            background-color: white;
+            color: black;
+            padding: 14px;
+            border-radius: 19px;
+            cursor: pointer;
+            transition: ease-in-out 0.5s;
+        }
+
+        div span:hover {
+            background-color: transparent;
+            color: white;
+            border: 3px solid white;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -109,6 +143,10 @@
     <a href="/" class="yes">Protect Your Systems</a>
     <a href="/" class="btn">Get Full Protect</a>
     <!-- Get Full Protect here -->
+    <div>
+        <p>Copyright 2024 <b>Uber</b></p>
+        <span>contact</span>
+    </div>
 
 </html>
 </body>
